@@ -67,7 +67,9 @@ if (process.env.NODE_ENV === 'production') {
     }),
     new webpack.optimize.OccurenceOrderPlugin()
   );
-} else {
+}
+
+if (process.env.NODE_ENV === 'development') {
   config.entry.main.unshift(
     `webpack-dev-server/client?http://${HOST}:${PORT}`,
     'webpack/hot/only-dev-server'
