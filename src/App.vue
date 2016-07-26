@@ -63,6 +63,7 @@
   #content {
     line-height: 1.5;
     max-width: 32em;
+    margin: 24px;
   }
 
   #content-link {
